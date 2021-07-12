@@ -5,9 +5,9 @@
     padding: 0;
 }
 
-/* =====================================
-    common styles and utilities
-========================================= */
+                                    /* =====================================
+                                        common styles and utilities
+                                    ========================================= */
 
 
 body {
@@ -19,17 +19,15 @@ body {
  h3 {
    font-size: 18px;
 }
-/* ===========================
-   Nav Bar Style
-============================
- */
+                                        /* ===========================
+                                        Nav Bar Style
+                                        ============================
+                                        */
 .header {
+    width: 100%;
     background-color: #562EFF;
-    /* height: 94px; */
     margin-bottom: 36px;
     overflow: hidden;
-    /* display: flex;
-    justify-content: center; */
 }
 .nav-bar {
     width: 930px;
@@ -44,6 +42,9 @@ body {
 }
 .company-profile div {
     padding-right: 36px;
+}
+.company-name {
+    color: white;
 }
 .logo img {
     width: 40.42px;
@@ -64,9 +65,9 @@ body {
 
 
 
-/* ===========================
-    Top Player Styling 
-============================
+                                    /* ===========================
+                                        Top Player Styling 
+                                    ============================
  */
  .container {
     width: 870px;
@@ -112,9 +113,9 @@ hr {
 }
 
 
-/*=========================
-        Blog Style
- ========================= */
+                                    /*=========================
+                                            Blog Style
+                                    ========================= */
 .blogs {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -162,9 +163,12 @@ hr {
     font-weight: 200;
 }
 
-/*======================
-    Latest Courses
-========================== */
+                                    /*======================
+                                        Latest Courses
+                                    ========================== */
+.course-container {
+    margin-top: 17px;
+}
 .latest-course-tittle {
     color:#562EFF;
     margin-bottom: 11px;
@@ -174,7 +178,7 @@ hr {
 .courses {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    padding: 12px;
+    margin-left: 35px;
 }
 .course {
     width: 252.42px;
@@ -238,3 +242,116 @@ hr {
 .clock-icon {
     margin-right: 5px;
 } 
+
+
+                            /*=====================
+                            Media Screen For Mobiles
+                            ======================= */
+
+@media screen and (max-width: 688px) {
+   .nav-bar {
+        flex-direction: column;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.players {
+    place-items: center;
+    grid-template-columns: repeat(1,1fr);
+}
+.top-players {
+    text-align: center;
+}
+.player {
+    display: block;
+}
+hr {
+    width: 100%;
+}
+.top-blog {
+  text-align: center;
+    width: 100%;
+    height:100%;
+}
+.blogs {
+    grid-template-columns: repeat(1,1fr);
+    height: 100%;
+}
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.courses {
+    grid-template-columns: repeat(1,1fr);
+    place-items: center;
+}
+.course-container {
+    
+    text-align: center;
+    height: 100%;
+    margin-top: 30px;
+}
+    
+}
+
+                            /*====================================
+                                     Media Screen For Tablets
+                            ====================================== */
+
+@media screen and (min-width: 688px) and (max-width: 992px) {
+    .header {
+        width: 100%;
+    }
+   .nav-bar {
+        justify-content: center;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.players {
+    place-items: center;
+    grid-template-columns: repeat(2,1fr); 
+}
+.top-players {
+    text-align: center;
+}
+.player {
+    display: block;
+}
+hr {
+    width: 100%;
+}
+.top-blog {
+  text-align: center;
+}
+.blogs {
+    grid-template-columns: repeat(2,1fr);
+    height: 100%;
+}
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.courses {
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+}
+ .course-container {
+    text-align: center;
+} 
+
+
+     
+}
