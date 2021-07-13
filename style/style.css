@@ -15,7 +15,6 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
 }
-
  h3 {
    font-size: 18px;
 }
@@ -73,12 +72,9 @@ body {
     width: 870px;
     height: 679px;
     background-color: #FFFFFF;
-    /* margin-left: 285px; */
     border-radius: 5px;
     padding: 33px;
-    /* margin-top: 36px; */
-    margin: auto;
-    
+    margin: auto; 
  }
  .top-player-tittle {
      color:#562EFF;
@@ -134,6 +130,9 @@ hr {
     margin-left: 33px;
     font-size: 24px;
 }
+.blog-image {
+    overflow: hidden;
+}
 .blog img {
     width: 177px;
     margin-right: 18px;
@@ -141,7 +140,6 @@ hr {
 
 .blog-info {
     width: 164px;
-    
 }
 .blog-info h3 {
     font-size: 20px;   
@@ -184,6 +182,7 @@ hr {
     width: 252.42px;
     border-radius: 5px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 4px;
+    overflow: hidden;
 }
 .course img{
     width: 224px;
@@ -244,9 +243,32 @@ hr {
 } 
 
 
-                            /*=====================
-                            Media Screen For Mobiles
-                            ======================= */
+                            /*=======================================
+                                    Animation,Transform,Transition
+                            ========================================= */
+li:hover a{
+ text-decoration: underline;
+ text-decoration-thickness: 2px; 
+ text-underline-offset: 4px;                             
+}
+.course img:hover,
+.blog img:hover {
+    transform: scale(1.1);
+    transition: transform 2s;
+}
+
+.blog-info>h3:hover,
+.blog-info a:hover,
+.course-author:hover,
+.course-tittle:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+ 
+
+                            /*==========================================
+                                        Media Screen For Mobiles
+                            ============================================ */
 
 @media screen and (max-width: 688px) {
    .nav-bar {
